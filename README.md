@@ -18,23 +18,23 @@ in memory.
 
 ```
 BankManagementSystem/
-├── src/
-│   ├── Account.java          (abstract base class)
-│   ├── SavingsAccount.java   (enforces minimum balance)
-│   ├── CurrentAccount.java   (allows overdraft)
-│   ├── Bank.java             (manages accounts in memory)
-│   └── BankApp.java          (main - console menu)
-└── README.md
+├── Account.java          (abstract base class)
+├── SavingsAccount.java   (enforces minimum balance)
+├── CurrentAccount.java   (allows overdraft)
+├── Bank.java             (manages accounts in memory)
+├── BankApp.java          (main - console menu)
+├── README.md
+└── .gitignore
 ```
 
 ## How to Compile & Run
 
-No setup, no database, no dependencies needed — just a JDK (8+).
+No setup, database, or external dependencies are needed. Install JDK 14 or newer (JDK 17 recommended).
 
 **From the project's root folder:**
 
 ```bash
-javac -d bin src/*.java
+javac -d bin *.java
 java -cp bin BankApp
 ```
 
